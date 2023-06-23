@@ -1,0 +1,31 @@
+import { NavLink } from "react-router-dom";
+import '../index.css';
+
+export default function Navbar(){
+    return (
+        <div>
+            <nav >
+                <div>
+                    <ul>
+                        <p >Deckenbau GmbH</p>
+                        <li >
+                            <NavLink to="/">
+                                Home
+                            </NavLink>
+                        </li>
+                        <li >
+                            <NavLink to="/">
+                                Galerie
+                            </NavLink>
+                        </li>
+                        <li >
+                            <NavLink to="/">
+                                Über uns
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    )
+}
