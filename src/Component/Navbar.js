@@ -14,7 +14,7 @@ export default function Navbar(){
                             </NavLink>
                         </li>
                         <li >
-                            <NavLink to="/">
+                            <NavLink to="/galerie">
                                 Galerie
                             </NavLink>
                         </li>
