@@ -3,7 +3,7 @@ import '../index.css';
 
 export default function Footer(){
     return(
-        <div>
+        <div className="footer">
             <p>Copyright Deckenbau GmbH</p>
             <li>
                 <NavLink to="/">Impressum</NavLink>
