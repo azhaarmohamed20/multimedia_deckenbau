@@ -1,8 +1,10 @@
+import CarouselSlider from "../Component/CarouselSlider"
 export default function Home(){
+
     return(
         <>
         <div>
-            <h1>Deckenbau</h1>
+            <CarouselSlider/>
         </div>
         </>
     )
