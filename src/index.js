@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import './index.css';
 import Home from './Pages/Home';
 import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
 
 ReactDOM.render(
   <Router>
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Routes>
       <Route path='/' element={<Home />}></Route>
     </Routes>
+    <Footer/>
   </Router>,
 
   document.getElementById('root')
