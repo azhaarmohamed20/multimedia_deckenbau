@@ -19,7 +19,7 @@ export default function Navbar(){
                             </NavLink>
                         </li>
                         <li >
-                            <NavLink to="/">
+                            <NavLink to="/ueberuns">
                                 Über uns
                             </NavLink>
                         </li>
