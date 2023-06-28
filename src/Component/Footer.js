@@ -6,7 +6,7 @@ export default function Footer(){
         <div className="footer">
             <p>Copyright Deckenbau GmbH</p>
             <li>
-                <NavLink to="/">Impressum</NavLink>
+                <NavLink to="/impressum">Impressum</NavLink>
             </li>
             <li>
                 <NavLink to="/">Datenschutz</NavLink>

@@ -8,6 +8,7 @@ import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Galerie from './Pages/Galerie';
 import About from './Pages/About';
+import Impressum from './Pages/Impressum';
 
 ReactDOM.render(
   <Router>
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route path='/' element={<Home />}></Route>
       <Route path='/galerie' element={<Galerie />}></Route>
       <Route path='/ueberuns' element={<About />}></Route>
+      <Route path='/impressum' element={<Impressum />}></Route>
     </Routes>
     <Footer/>
   </Router>,
