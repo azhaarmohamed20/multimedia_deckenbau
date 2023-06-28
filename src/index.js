@@ -9,6 +9,7 @@ import Footer from './Component/Footer';
 import Galerie from './Pages/Galerie';
 import About from './Pages/About';
 import Impressum from './Pages/Impressum';
+import Datenschutz from './Pages/Datenschutz';
 
 ReactDOM.render(
   <Router>
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path='/galerie' element={<Galerie />}></Route>
       <Route path='/ueberuns' element={<About />}></Route>
       <Route path='/impressum' element={<Impressum />}></Route>
+      <Route path='/datenschutz' element={<Datenschutz />}></Route>
     </Routes>
     <Footer/>
   </Router>,

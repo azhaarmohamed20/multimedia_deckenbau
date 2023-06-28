@@ -9,7 +9,7 @@ export default function Footer(){
                 <NavLink to="/impressum">Impressum</NavLink>
             </li>
             <li>
-                <NavLink to="/">Datenschutz</NavLink>
+                <NavLink to="/datenschutz">Datenschutz</NavLink>
             </li>
         </div>
     )
