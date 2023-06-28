@@ -6,44 +6,26 @@ import { NavLink } from "react-router-dom";
 
 export default function CarouselSlider(){
     
-const images = [image1, image2, image3];
-const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = [image1, image2, image3];
+    const [current, setCurrent] = useState(0)
 
-const previousSlide = () => {
-    const lastIndex = images.length - 1;
-    const shouldResetIndex = currentImageIndex === 0;
-    const index = shouldResetIndex ? lastIndex : currentImageIndex - 1;
-    setCurrentImageIndex(index);
-};
+    function goToLeft(){
+        setCurrent(current === 0 ? images.length -1 : current -1)
+    }
 
-const nextSlide = () => {
-    const lastIndex = images.length - 1;
-    const shouldResetIndex = currentImageIndex === lastIndex;
-    const index = shouldResetIndex ? 0 : currentImageIndex + 1;
-    setCurrentImageIndex(index);
-};
+    function goToRight(){
+        setCurrent(current === images.length - 1 ? 0 : current + 1)
+    }
 
-return (
-    <div className="max-w-lg mx-auto">
-      <div className="relative">
-        <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-200 text-gray-700 rounded-full px-4 py-2"
-          onClick={previousSlide}
-        >
-          Previous
-        </button>
-        <img
-          src={images[currentImageIndex]}
-          alt="Slider"
-          className="w-full rounded-lg"
-        />
-        <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-200 text-gray-700 rounded-full px-4 py-2"
-          onClick={nextSlide}
-        >
-          Next
-        </button>
-      </div>
-    </div>
+    return(
+        <div>
+            <div className="flex items-center justify-center">
+                <button onClick={goToLeft} className="p-4 bg-gray-200 rounded-full">Vorheriges</button>
+                <img src={images[current]} alt="" className="w-1/2 h-1/2 object-cover" />
+                <button onClick={goToRight} className="p-4 bg-gray-200 rounded-full">Nächstes</button>
+            </div>
+
+        </div>
     )
+
 } 

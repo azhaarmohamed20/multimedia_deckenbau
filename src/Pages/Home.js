@@ -3,9 +3,7 @@ export default function Home(){
 
     return(
         <>
-        <div>
-            <CarouselSlider/>
-        </div>
+        <CarouselSlider/>
         </>
     )
 }
