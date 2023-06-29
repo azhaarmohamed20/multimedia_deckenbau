@@ -1,4 +1,4 @@
-export default function Galerie(){
+export default function Angebot(){
     return(
         <>
         <div>

@@ -14,8 +14,8 @@ export default function Navbar(){
                             </NavLink>
                         </li>
                         <li className="text-[18px] font-bold" >
-                            <NavLink className="text-black aria-[current=page]:text-red-600 text-black" to="/galerie">
-                                Galerie
+                            <NavLink className="text-black aria-[current=page]:text-red-600 text-black" to="/angebot">
+                                Angebot
                             </NavLink>
                         </li>
                         <li  className="text-[18px] font-bold">
