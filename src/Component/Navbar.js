@@ -19,13 +19,13 @@ export default function Navbar(){
                             </NavLink>
                         </li>
                         <li  className="text-[18px] font-bold">
-                            <NavLink className="text-black aria-[current=page]:text-red-600 text-black" to="/kontakt">
-                                Kontakt
+                            <NavLink className="text-black aria-[current=page]:text-red-600 text-black" to="/ueberuns">
+                                Über uns
                             </NavLink>
                         </li>
                         <li  className="text-[18px] font-bold">
-                            <NavLink className="text-black aria-[current=page]:text-red-600 text-black" to="/ueberuns">
-                                Über uns
+                            <NavLink className="text-black aria-[current=page]:text-red-600 text-black" to="/kontakt">
+                                Kontakt
                             </NavLink>
                         </li>
                     </ul>
