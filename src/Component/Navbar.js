@@ -3,8 +3,8 @@ import '../index.css';
 
 export default function Navbar(){
     return (
-        <div className="pt-[0.5%]">
-            <nav className="flex m-auto pt-2 ml-[500] m-auto w-[85%] h-[10vh] align-center" >
+        <div className="pt-[0.5%] relative z-30 ">
+            <nav className="flex m-auto pt-2 ml-[500] m-auto w-[85%] h-[5vh] align-center" >
                 <div>
                     <ul className="flex items-center gap-[10vw] justify-around">
                         <p className="text-[18px] font-extrabold text-black mr-[50px]">Deckenbau GmbH</p>
