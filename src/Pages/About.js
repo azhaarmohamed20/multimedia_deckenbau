@@ -1,6 +1,4 @@
-import image1 from '../images/IMG_1.jpg';
-import image2 from '../images/IMG_2.jpg';
-import image3 from '../images/IMG_0118.JPG';
+import image3 from '../images/IMG_0043.JPG';
 
 export default function About(){
     return(
@@ -9,6 +7,7 @@ export default function About(){
           <img src={image3} alt="Header" className="w-full h-auto object-cover object-center" />
         </div>
         <div className="p-auto relative m-auto w-[85%] bg-white z-20 mt-[28%] text-center">
+            <br></br>
           <h1 className='font-bold text-[40px]'>Wir sind ein funktionales Team </h1>
           <br></br>
           <p className='text-[20px] text-left'>Bei uns dreht sich alles um Deckenmontagen und wir sind stolz darauf, Ihnen hochwertige Lösungen und erstklassigen Service anzubieten. Unser Unternehmen wurde mit dem Ziel gegründet, Ihre Deckenprojekte professionell und effizient umzusetzen.<br></br><br></br>
