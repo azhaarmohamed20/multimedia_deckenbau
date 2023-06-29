@@ -3,12 +3,14 @@ import '../index.css';
 
 export default function Footer(){
     return(
-        <div className="m-auto w-[85%]">
-            <div className="flex m-auto h-16 relative bottom-0 flex-row items-center gap-[8vw] align-center ">
-                <p>Copyright Deckenbau GmbH</p>
-                <NavLink to="/impressum">Impressum</NavLink>
-                <NavLink to="/datenschutz">Datenschutz</NavLink>
+        <footer className="footer bg-yellow-300 flex items-center mt-[2%]">
+            <div className="container mx-auto px-4">
+            <div className="flex items-center justify-center h-24 gap-[10vw]">
+                <p className="text-black">Copyright Deckenbau GmbH</p>
+                <NavLink to="/impressum" className="text-gray-600 font-bold">Impressum</NavLink>
+                <NavLink to="/datenschutz" className="text-gray-600 font-bold">Datenschutz</NavLink>
             </div>
-        </div>
+            </div>
+        </footer>
     )
 }
