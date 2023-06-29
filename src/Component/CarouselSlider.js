@@ -1,31 +1,68 @@
-import { useEffect,useState,useRef } from "react";
-import image1 from '../images/IMG_1.jpg'
-import image2 from '../images/IMG_2.jpg'
-import image3 from '../images/IMG_3.jpg'
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
+import { Link } from "react-router-dom";
 
-export default function CarouselSlider(){
-    
-    const images = [image1, image2, image3];
-    const [current, setCurrent] = useState(0)
+export default function CarouselSlider({ images, texts }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    function goToLeft(){
-        setCurrent(current === 0 ? images.length -1 : current -1)
-    }
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
+  
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
 
-    function goToRight(){
-        setCurrent(current === images.length - 1 ? 0 : current + 1)
-    }
+  useEffect(() => {
+    const handleResize = () => {
+      const container = document.getElementById("carousel-container");
+      if (container) {
+        container.style.height = `${window.innerHeight}px`;
+      }
+    };
 
-    return(
-        <div>
-            <div className="flex items-center justify-center">
-                <button onClick={goToLeft} className="p-4 bg-gray-200 rounded-full">Vorheriges</button>
-                <img src={images[current]} alt="" className="w-1/2 h-1/2 object-cover" />
-                <button onClick={goToRight} className="p-4 bg-gray-200 rounded-full">Nächstes</button>
-            </div>
+    window.addEventListener("resize", handleResize);
+    handleResize();
 
-        </div>
-    )
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-} 
+  const currentText = texts[currentImageIndex];
+
+  return (
+    <div
+      id="carousel-container"
+      className="absolute top-0 left-0 right-0 z-10 overflow-hidden"
+      style={{
+        height: `${window.innerHeight}px`,
+        backgroundImage: `url(${images[currentImageIndex]})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <button
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 focus:outline-none"
+        onClick={prevImage}
+      >
+        <ChevronLeftIcon className="h-8 w-8 text-white" />
+      </button>
+
+      <button
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 focus:outline-none"
+        onClick={nextImage}
+      >
+        <ChevronRightIcon className="h-8 w-8 text-white" />
+      </button>
+
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+        <p className="text-white font-bold text-[40px]">{currentText}</p>
+        <Link to="/ueberuns">
+            <button className="bg-white text-black px-4 py-2 mt-4">Learn More</button>
+        </Link>
+    </div>
+
+    </div>
+  );
+}
