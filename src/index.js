@@ -10,6 +10,7 @@ import Galerie from './Pages/Galerie';
 import About from './Pages/About';
 import Impressum from './Pages/Impressum';
 import Datenschutz from './Pages/Datenschutz';
+import Kontakt from './Pages/Kontakt';
 
 ReactDOM.render(
   <Router>
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='/galerie' element={<Galerie />}></Route>
+      <Route path='/kontakt' element={<Kontakt />}></Route>
       <Route path='/ueberuns' element={<About />}></Route>
       <Route path='/impressum' element={<Impressum />}></Route>
       <Route path='/datenschutz' element={<Datenschutz />}></Route>
