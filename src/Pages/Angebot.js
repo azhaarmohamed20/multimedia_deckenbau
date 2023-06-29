@@ -10,14 +10,15 @@ export default function Angebot() {
         <img src={image4} alt="Header" className="w-full h-auto object-cover object-center" />
       </div>
       <div className="p-auto relative m-auto w-[85%] bg-white z-20 mt-[28%] text-center">
+        <br></br>
         <h1 className='font-bold text-[40px]'>Montageprofis in jeder Situation </h1>
-
+        <br></br>
         <div className="flex flex-row gap-[2vw]  m-auto">
             <div className="p-5 ">
               <img src={image5} alt="Image 1" className="w-[500px]" />
               <p className='m-auto text-[24px]' >Metalldecken</p>
             </div>
-
+          
             <div className="p-5">
               <img src={image6} alt="Image 2" className="w-[500px]" />
               <p className='m-auto text-[24px]' >Akustik</p>
