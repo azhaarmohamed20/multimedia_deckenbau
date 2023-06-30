@@ -3,8 +3,8 @@ import image3 from '../images/IMG_0043.JPG';
 export default function About(){
     return(
         <>
-        <div className="absolute top-0 left-0 right-0 z-10 overflow-hidden h-[40vh] ">
-          <img src={image3} alt="Header" className="w-full h-auto object-cover object-center" />
+        <div className="absolute top-0 left-0 right-0 z-10 overflow-hidden h-[60vh]">
+            <img src={image3} alt="Header" className="w-full h-auto object-cover object-center" />
         </div>
         <div className="p-auto relative m-auto w-[85%] bg-white z-20 mt-[28%] text-center">
             <br></br>
