@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Multimedia Seite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ziel
+Das Ziel ist es eine Multimedia Seite zu erstellen.
 
-## Available Scripts
+## Voraussetzungen
+Bevor Sie diese Applikation starten, stellen Sie sicher, dass folgende Dinge installiert sind:
+* Nodejs
+* allenfalls Docker
 
-In the project directory, you can run:
+## Inbetriebnahme
+Projekt herunterladen
+<br/>
+```git clone https://github.com/azhaarmohamed20/versicherungsrechner.git```
+<br/>
 
-### `npm start`
+### Projekt bauen
+Um das Projekt zu starten müssen Sie es mit ```$ npm install ``` builden oder 
+Sie machen es mit Docker ```$ docker build .```  dafür müssen sie Docker installiert haben.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Starten der App
+Mit folgendem Befehl können sie die App starten
+<br/> ```$ npm start```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Design Prozess
+Ich habe zu Beginn dieses Projekt mir erst Gedanken dazu gemacht, über welches Thema meine <br/>
+Seite geht. Ich kam schnell zur Entscheidung es über Deckenbau zu machen.
 
-### `npm test`
+### Wireframe
+Für mein Seite habe ich zuerst ein Basic Wireframe erstellt um eine Idee zu haben wie meine <br/>
+Aussehen sollte. Siehe unten
+[Doku zum Design](./Doku/Wireframe%20Deckenbau%20Gmbh.pdf)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Entscheidungsmatrix
+Als nächstes musste ich eine Toolauswahl machen. Ich habe eine Toolauswahl zu Bildbearbeitungsprogrammen <br/>
+gemacht. Dieser sieht wie folgt aus.
+![Entscheidungsmatrix](./Doku/Entscheidungsmatrix.PNG)
 
-### `npm run build`
+## Über Mich
+Ich bin Azhaar Mohamed und gehe in die IMS. Diese Projekt habe ich für die Schule erstellt <br/>
+Ich bin 17 Jahre alt und möchte gerne Applikationsentwicklerin werden.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Umsetzung & Reflexion
+Die Umsetzung meines Projekts lief gut. Ich konnte alles so umsetzen wie ich es geplant hatte <br/>
+Ich habe mein Wissen in React nochmals verbessert und hatte die Möglichkeit Tailwind <br/>
+kennenzulernen. Ich habe viele neue Techniken angewandt und fühle mich sicherer im erstellen <br/>
+von Frontend Applikationen
