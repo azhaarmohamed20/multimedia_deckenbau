@@ -1,17 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './Pages/Home';
+import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
+import About from './Pages/About';
+import Impressum from './Pages/Impressum';
+import Datenschutz from './Pages/Datenschutz';
+import Kontakt from './Pages/Kontakt';
+import Angebot from './Pages/Angebot';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+  <Router>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/angebot' element={<Angebot />}></Route>
+      <Route path='/kontakt' element={<Kontakt />}></Route>
+      <Route path='/ueberuns' element={<About />}></Route>
+      <Route path='/impressum' element={<Impressum />}></Route>
+      <Route path='/datenschutz' element={<Datenschutz />}></Route>
+    </Routes>
+    <Footer/>
+  </Router>,
+
+  document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
