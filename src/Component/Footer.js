@@ -22,7 +22,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col h-[20vh]'>
       <main className="flex-grow">
         {/* Your page content goes here */}
       </main>
