@@ -22,10 +22,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className='flex flex-col h-[20vh]'>
-      <main className="flex-grow">
-        {/* Your page content goes here */}
-      </main>
+    <div className='flex flex-col h-[10vh]'>
       <footer className={`bg-yellow-300 flex items-center mt-auto relative mb-${footerHeight * -1 + 4}`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center h-24 gap-[10vw]">
