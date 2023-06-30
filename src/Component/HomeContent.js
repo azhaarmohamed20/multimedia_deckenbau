@@ -1,8 +1,6 @@
 import image1 from '../images/IMG_0043.JPG';
 import image2 from '../images/IMG_0118.JPG';
 import image3 from '../images/IMG_0119.JPG';
-import image4 from '../images/IMG_0102.JPG';
-import image5 from '../images/IMG_0100.JPG';
 import image6 from '../images/IMG_0094.JPG';
 import { Link } from "react-router-dom";
 
