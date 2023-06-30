@@ -29,7 +29,7 @@ Seite geht. Ich kam schnell zur Entscheidung es über Deckenbau zu machen.
 ### Wireframe
 Für mein Seite habe ich zuerst ein Basic Wireframe erstellt um eine Idee zu haben wie meine <br/>
 Aussehen sollte. Siehe unten
-[Doku zum Design](./Doku/Wireframe%20Deckenbau%20Gmbh.pdf)
+[Wireframe](./Doku/Wireframe%20Deckenbau%20Gmbh.pdf)
 
 ### Entscheidungsmatrix
 Als nächstes musste ich eine Toolauswahl machen. Ich habe eine Toolauswahl zu Bildbearbeitungsprogrammen <br/>
