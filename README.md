@@ -1,5 +1,8 @@
 # Multimedia Seite
 
+Die Webseite wurde mit Firebase gehostet: [Webseite](https://versicherungsrechnermohamed.web.app/)
+Achtung Seite ist nicht für mobile entwickelt worden.
+
 ## Ziel
 Das Ziel ist es eine Multimedia Seite zu erstellen.
 
